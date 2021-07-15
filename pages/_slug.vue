@@ -19,10 +19,8 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
-    const recipe = await $content('recipes', params.slug).fetch()
-
-    return { recipe }
+  async fetch () {
+    this.recipe = await this.$content('recipes', this.$nuxt.context.params.slug).fetch()
   }
 }
 </script>

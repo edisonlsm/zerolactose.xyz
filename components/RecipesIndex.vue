@@ -55,10 +55,6 @@ export default {
     // } else {
     //   this.recipes = recipes
     // }
-
-    return {
-      recipes
-    }
   }
 }
 </script>
