@@ -1,13 +1,20 @@
 <template>
-  <article class="m-6 prose prose-blue prose-sm sm:prose lg:prose-lg xl:prose-2xl">
-    <h1 class="text-4xl font-bold">
-      {{ recipe.title }}
-    </h1>
-    <!-- <p>{{ recipe.description }}</p> -->
-    <nuxt-content
-      :document="recipe"
-    />
-  </article>
+  <div class="lg:flex h-full mb-16 lg:mb-0">
+    <div class="flex-shrink-0 lg:static lg:w-60 xl:w-72 hidden lg:block border-zero-orange border-opacity-50 border-l-0 border-t-0 border-r border-b-0">
+      <RecipesIndex />
+    </div>
+    <div>
+      <article class="m-6 prose prose-blue prose-sm sm:prose lg:prose-lg xl:prose-2xl">
+        <h1 class="text-4xl font-bold">
+          {{ recipe.title }}
+        </h1>
+        <!-- <p>{{ recipe.description }}</p> -->
+        <nuxt-content
+          :document="recipe"
+        />
+      </article>
+    </div>
+  </div>
 </template>
 
 <script>
