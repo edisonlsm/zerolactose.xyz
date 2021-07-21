@@ -5,20 +5,22 @@ title: Brownie
 ### Ingredientes
 
 - 200g de margarina sem lactose
-- 4 xícaras de açúcar
+- 4 xícaras de açúcar demerara
 - 2 xícaras de trigo
 - 4 colheres de sopa de cacau em pó 100%
 - 4 ovos inteiros
 
 ### Modo de Preparo
 
-Em uma tigela, coloque o açúcar, o trigo e o cacau e misture.
+Pré-aqueça o forno por quinze minutos em fogo médio (200 graus). Caso utilize um forno elétrico, ligue tanto o aquecimento inferior quanto o superior.
 
-Derreta a margarina, mas não deixe ferver (dica: 30 segundos no microondas). Misture com os outros ingredientes.
+Derreta a margarina, mas não deixe ferver (dica: 30 segundos no microondas). Reserve.
 
-Coloque os ovos em um outro recipiente, bata um pouco para dissolver as gemas e misture com o resto da massa.
+Em um recipiente, coloque o açúcar, os ovos, a margarina derretida, o cacau e misture.
 
-Unte bem a forma e asse por cerca de 50 minutos em fogo médio.
+Por último, coloque o trigo e misture até encorpar e ficar uma massa homogênea.
+
+Unte bem a forma e leve ao forno pré-aquecido por cerca de meia hora, ainda em fogo médio. Caso utilize um forno elétrico, desligue o aquecimento superior após dez minutos.
 
 <br />
 <br />
