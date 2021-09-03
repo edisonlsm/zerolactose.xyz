@@ -1,6 +1,6 @@
 ---
-title: Sorvete de Leite Condensado
-description: Sorvete de Leite Condensado feito com gelatina sem sabor
+title: Sorvete de Gelatina
+description: Sorvete de Gelatina
 ---
 
 ### Equipamentos
@@ -12,7 +12,7 @@ description: Sorvete de Leite Condensado feito com gelatina sem sabor
 
 * 250ml de água quente
 * 250ml de água gelada
-* 1 pacote de gelatina
+* 1 pacote de gelatina do sabor de preferência
 * 1 caixa de creme de leite zero lactose
 * 1 caixa de leite condensado zero lactose
 
