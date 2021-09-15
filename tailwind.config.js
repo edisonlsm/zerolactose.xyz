@@ -13,7 +13,7 @@ module.exports = {
         DEFAULT: {
           css: {
             'h1, h2, h3, h4': {
-              color: '#db700f',
+              color: '#db813b',
               fontWeight: '700',
               fontFamily: 'Raleway'
             },
@@ -28,7 +28,7 @@ module.exports = {
         }
       },
       colors: {
-        'zero-orange': '#db700f'
+        'zero-orange': '#db813b'
       }
     }
   },
