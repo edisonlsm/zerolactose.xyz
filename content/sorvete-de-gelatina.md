@@ -20,7 +20,7 @@ description: Sorvete de Gelatina
 
 Coloque o creme de leite e o leite condensado no liquidificador e bata até misturar tudo.
 
-Dilua a gelatina sem sabor na água quente. Mexa bem até a gelatina ter sumido completamente. Coloque a água gelada no mesmo recipiente e mexa.
+Dilua a gelatina na água quente. Mexa bem até a gelatina ter sumido completamente. Coloque a água gelada no mesmo recipiente e mexa.
 
 Ligue o liquidificador novamente e acrescente a água com gelatina ao resto da receita, aos poucos e com cuidado, sem desligar o liquidificador. Deixe tudo bater por pelo menos 3 minutos.
 
