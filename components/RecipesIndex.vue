@@ -10,7 +10,7 @@
         class="mx-8 my-2"
       >
         <NuxtLink
-          :to="{ name: 'slug', params: { slug: recipe.slug } }"
+          :to="recipe.path"
           class="text-lg flex"
           exact-active-class="text-zero-orange"
         >
@@ -25,8 +25,8 @@
 export default {
   async fetch () {
     // Fetch the recipes from the nuxt-content store
-    const recipes = await this.$content()
-      .only(['title', 'description', 'img', 'slug', 'author'])
+    const recipes = await this.$content('receitas')
+      .only(['title', 'description', 'img', 'path', 'author'])
       .sortBy('title', 'asc')
       .fetch()
 

@@ -4,18 +4,15 @@
 
 <script>
 export default {
-  async asyncData ({ $content, route, redirect }) {
-    const recipes = await $content()
-      .only(['slug'])
+  async mounted () {
+    const recipes = await this.$content('receitas')
+      .only(['path'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
     const recipe = recipes[Math.floor(Math.random() * recipes.length)]
 
-    // console.log(route)
-    // console.log(recipe)
-
-    redirect(`/${recipe.slug}/`)
+    this.$router.replace(`${recipe.path}/`)
   }
 }
 </script>

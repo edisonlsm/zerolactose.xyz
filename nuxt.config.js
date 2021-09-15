@@ -49,16 +49,14 @@ export default {
   build: {
   },
 
-  router: {
-    trailingSlash: true
-  },
-
   generate: {
     async routes () {
       const { $content } = require('@nuxt/content')
-      const files = await $content().only(['path']).fetch()
+      const files = await $content('receitas').only(['path']).fetch()
+      const routes = files.map(file => file.path === '/index' ? '/' : file.path)
 
-      return files.map(file => file.path === '/index' ? '/' : file.path)
+      console.log(routes)
+      return routes
     }
   }
 }

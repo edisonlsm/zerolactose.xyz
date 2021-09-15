@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
-    <ZeroHeader />
-    <div class="pt-16 pb-8">
+    <ZeroHeader class="fixed" />
+    <div class="pb-8">
       <Nuxt />
     </div>
     <ZeroFooter />
