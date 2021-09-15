@@ -22,12 +22,7 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    // const recipes = await $content('recipes')
-    //   .only(['title', 'description', 'img', 'slug', 'author'])
-    //   .sortBy('title', 'asc')
-    //   .fetch()
-
-    const recipe = await $content('recipes', params.slug).fetch()
+    const recipe = await $content(params.slug).fetch()
 
     return { recipe }
   }

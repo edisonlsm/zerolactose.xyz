@@ -5,7 +5,7 @@
 <script>
 export default {
   async asyncData ({ $content, route, redirect }) {
-    const recipes = await $content('recipes')
+    const recipes = await $content()
       .only(['slug'])
       .sortBy('createdAt', 'asc')
       .fetch()

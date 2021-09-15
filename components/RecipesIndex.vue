@@ -25,7 +25,7 @@
 export default {
   async fetch () {
     // Fetch the recipes from the nuxt-content store
-    const recipes = await this.$content('recipes')
+    const recipes = await this.$content()
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('title', 'asc')
       .fetch()
