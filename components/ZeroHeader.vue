@@ -13,7 +13,7 @@
       class="transform left-0 w-60 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 border-zero-orange border-opacity-50 border-r"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
     >
-      <RecipesIndex />
+      <RecipesIndex @opened="isOpen = false" />
     </aside>
   </header>
 </template>
@@ -28,6 +28,11 @@ export default {
   data () {
     return {
       isOpen: false
+    }
+  },
+  watch: {
+    $route () {
+      this.isOpen = false
     }
   }
 }
