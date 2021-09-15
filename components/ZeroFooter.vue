@@ -1,9 +1,5 @@
 <template>
-  <footer class="fixed w-full bottom-0 flex items-center justify-center bg-white border-zero-orange border-opacity-50 border-l-0 border-t border-r-0 border-b-0">
-    <div class="block lg:hidden text-center p-2">
-      <NuxtLink to="/receitas" class="text-lg text-center text-zero-orange">
-        <span>Ver Todas as Receitas</span>
-      </NuxtLink>
-    </div>
+  <footer class="fixed h-8 bottom-0 left-0 z-50 w-full flex justify-end items-center bg-zero-orange bg-opacity-75 py-2 px-4 text-white">
+    <span class="text-xs">Criado por <a href="https://twitter.com/edisonlsm" class="hover:underline">@edisonlsm</a></span>
   </footer>
 </template>

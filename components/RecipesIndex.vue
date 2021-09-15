@@ -1,20 +1,14 @@
 <template>
-  <div v-if="!$fetchState.pending && !$fetchState.error" class="my-2">
-    <span class="text-xl mx-6 font-bold text-zero-orange text-lg">
-      Receitas
+  <div v-if="!$fetchState.error" class="my-4">
+    <span class="mx-6 font-bold text-zero-orange text-2xl">
+      Todas as receitas
     </span>
-    <ul class="flex flex-wrap">
+    <ul class="flex flex-wrap mt-2">
       <li
         v-for="recipe of recipes"
         :key="recipe.slug"
         class="mx-8 my-2"
       >
-        <!-- <span
-          v-if="currentSlug == recipe.slug"
-          class="text-lg flex text-zero-orange"
-        >
-          {{ recipe.title }}
-        </span> -->
         <NuxtLink
           :to="{ name: 'slug', params: { slug: recipe.slug } }"
           class="text-lg flex"
@@ -37,24 +31,11 @@ export default {
       .fetch()
 
     this.recipes = recipes
-
-    // Set the current slug from the page params
-    // const currentSlug = this.$nuxt.context.params.slug
-
-    // this.currentSlug = currentSlug
-
-    // if (typeof currentSlug !== 'undefined' && currentSlug != null) {
-    //   // If the current slug is not nil,
-    //   //  sort the recipes array to move the current recipe to the front
-    //   const sortedRecipes = recipes.sort(function (x, y) {
-    //     return x.slug === currentSlug ? -1 : y === currentSlug ? 1 : 0
-    //   })
-
-    //   this.recipes = sortedRecipes
-    //   this.currentSlug = currentSlug
-    // } else {
-    //   this.recipes = recipes
-    // }
+  },
+  data () {
+    return {
+      recipes: []
+    }
   }
 }
 </script>
