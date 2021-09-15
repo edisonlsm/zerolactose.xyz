@@ -15,7 +15,7 @@ export default {
     // console.log(route)
     // console.log(recipe)
 
-    redirect(`/${recipe.slug}`)
+    redirect(`/${recipe.slug}/`)
   }
 }
 </script>
