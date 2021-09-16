@@ -1,6 +1,7 @@
 ---
 title: Sorvete de Leite Condensado
 description: Sorvete de Leite Condensado feito com gelatina sem sabor
+category: Receitas
 ---
 
 ### Equipamentos
@@ -39,4 +40,4 @@ Rende aproxidamente 3 litros de sorvete.
 <br />
 <br />
 
-[Adaptado de https://comidinhasdochef.com/sorvete-caseiro-cremoso/](https://comidinhasdochef.com/sorvete-caseiro-cremoso/)
+[`Adaptado de https://comidinhasdochef.com/sorvete-caseiro-cremoso/`](https://comidinhasdochef.com/sorvete-caseiro-cremoso/)

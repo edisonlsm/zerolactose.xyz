@@ -9,7 +9,7 @@
         <RecipesIndex />
       </div>
       <div>
-        <article class="m-6 prose prose-blue prose-sm sm:prose lg:prose-lg xl:prose-2xl">
+        <article class="m-8 prose prose-sm md:prose lg:prose-lg xl:prose-xl">
           <h1 class="text-4xl font-bold">
             {{ recipe.title }}
           </h1>
@@ -24,43 +24,44 @@
 </template>
 
 <script>
-export default {
-  async asyncData ({ $content, params }) {
-    const recipe = await $content('receitas', params.slug).fetch()
+import { mapGetters, mapActions } from 'vuex'
 
-    return { recipe }
+export default {
+  async fetch () {
+    if (!this.recipes || this.recipes.length === 0) {
+      // Need to fetch the data on the store
+      await this.fetchRecipes()
+    }
+
+    const path = this.$route.path
+    this.recipe = this.recipeByPath(path)
+  },
+  data () {
+    return {
+      recipe: undefined
+    }
+  },
+  computed: {
+    ...mapGetters('recipe', ['recipes', 'recipeByPath'])
+  },
+  methods: {
+    ...mapActions(
+      'recipe', {
+        fetchRecipes: 'fetch'
+      }
+    )
   }
 }
 </script>
 
 <style>
-  .nuxt-content a {
-    color: black;
-    font-size: 0.75rem;
+  .nuxt-content code::before, .nuxt-content code::after {
+    content: '';
   }
-  /* .nuxt-content h1 {
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+
+  .nuxt-content code {
+    color: black !important;
+    font-size: 0.75rem !important;
+    font-weight: 400 !important;
   }
-  .nuxt-content h2 {
-    font-weight: bold;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-  .nuxt-content h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .nuxt-content p {
-    margin-bottom: 20px;
-  } */
-  /* .icon.icon-link {
-    background-image: url('~assets/svg/icon-hashtag.svg');
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: 20px 20px;
-  } */
 </style>

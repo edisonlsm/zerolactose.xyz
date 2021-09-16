@@ -3,16 +3,29 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
+
 export default {
-  async mounted () {
-    const recipes = await this.$content('receitas')
-      .only(['path'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
-
-    const recipe = recipes[Math.floor(Math.random() * recipes.length)]
-
+  async fetch () {
+    if (!this.recipes || this.recipes.length === 0) {
+      // Need to fetch the data on the store
+      await this.fetchRecipes()
+    }
+  },
+  computed: {
+    ...mapGetters('recipe', ['recipes', 'categories'])
+  },
+  mounted () {
+    // Choose one recipe at random and redirect to it
+    const recipe = this.recipes[Math.floor(Math.random() * this.recipes.length)]
     this.$router.replace(`${recipe.path}/`)
+  },
+  methods: {
+    ...mapActions(
+      'recipe', {
+        fetchRecipes: 'fetch'
+      }
+    )
   }
 }
 </script>

@@ -1,41 +1,52 @@
 <template>
   <div v-if="!$fetchState.error" class="my-4">
-    <span class="mx-6 font-bold text-zero-orange text-2xl">
-      Todas as receitas
-    </span>
-    <ul class="flex flex-wrap mt-2">
-      <li
-        v-for="recipe of recipes"
-        :key="recipe.slug"
-        class="mx-8 my-2"
+    <div
+      v-for="category in categories"
+      :key="category.name"
+    >
+      <span
+        class="block mx-6 font-bold text-zero-orange text-2xl"
       >
-        <NuxtLink
-          :to="recipe.path"
-          class="text-lg flex"
-          exact-active-class="text-zero-orange"
+        {{ category.name }}
+      </span>
+      <ul class="flex flex-wrap my-2">
+        <li
+          v-for="recipe in category.recipes"
+          :key="recipe.slug"
+          class="mx-8 my-2"
         >
-          <h4>{{ recipe.title }}</h4>
-        </NuxtLink>
-      </li>
-    </ul>
+          <NuxtLink
+            :to="recipe.path"
+            class="text-lg flex"
+            exact-active-class="text-zero-orange"
+          >
+            <h4>{{ recipe.title }}</h4>
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+
 export default {
   async fetch () {
-    // Fetch the recipes from the nuxt-content store
-    const recipes = await this.$content('receitas')
-      .only(['title', 'description', 'img', 'path', 'author'])
-      .sortBy('title', 'asc')
-      .fetch()
-
-    this.recipes = recipes
-  },
-  data () {
-    return {
-      recipes: []
+    if (!this.recipes || this.recipes.length === 0) {
+      // Need to fetch the data on the store
+      await this.fetchRecipes()
     }
+  },
+  computed: {
+    ...mapGetters('recipe', ['recipes', 'categories'])
+  },
+  methods: {
+    ...mapActions(
+      'recipe', {
+        fetchRecipes: 'fetch'
+      }
+    )
   }
 }
 </script>

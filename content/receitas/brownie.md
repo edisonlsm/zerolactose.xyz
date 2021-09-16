@@ -1,5 +1,6 @@
 ---
 title: Brownie
+category: Receitas
 ---
 
 ### Ingredientes
@@ -27,4 +28,4 @@ Unte bem a forma e leve ao forno pré-aquecido por cerca de meia hora, ainda em 
 <br />
 <br />
 
-[Adaptado de https://receitas.globo.com/brownie-vapt-vupt-4e8209dc8811965c00004a6b.ghtml](https://receitas.globo.com/brownie-vapt-vupt-4e8209dc8811965c00004a6b.ghtml)
+[`Adaptado de https://receitas.globo.com/brownie-vapt-vupt-4e8209dc8811965c00004a6b.ghtml`](https://receitas.globo.com/brownie-vapt-vupt-4e8209dc8811965c00004a6b.ghtml)

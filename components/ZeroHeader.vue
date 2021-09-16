@@ -10,7 +10,7 @@
       <span class="mx-3 text-4xl text-white font-bold">Receitas Zero Lactose</span>
     </div>
     <aside
-      class="transform left-0 w-60 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 border-zero-orange border-opacity-50 border-r"
+      class="transform left-0 w-60 bg-white fixed lg:hidden h-full overflow-auto ease-in-out transition-all duration-300 z-30 border-zero-orange border-opacity-50 border-r"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
     >
       <RecipesIndex @opened="isOpen = false" />

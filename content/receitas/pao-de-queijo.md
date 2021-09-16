@@ -1,6 +1,7 @@
 ---
 title: Pão de Queijo Crocante
 description: Receita de Pão de Queijo Zero Lactose sem liquidificador ou batedeira
+category: Receitas
 ---
 
 ### Ingredientes
@@ -29,4 +30,4 @@ Faça pequenas bolinhas com as mãos (2~3cm) e distribua-os igualmente em uma fo
 <br />
 <br />
 
-[Adaptado de https://www.youtube.com/watch?v=cScbtSVMgac](https://www.youtube.com/watch?v=cScbtSVMgac)
+[`Adaptado de https://www.youtube.com/watch?v=cScbtSVMgac`](https://www.youtube.com/watch?v=cScbtSVMgac)
