@@ -2,6 +2,7 @@
   <header class="top-0 left-0 right-0 bg-white z-50">
     <div class="bg-zero-orange w-full px-3 flex justify-start items-center py-4">
       <button
+        aria-label="Toggle Drawer Menu"
         class="block lg:hidden outline-none focus:outline-none"
         @click="isOpen=!isOpen"
       >

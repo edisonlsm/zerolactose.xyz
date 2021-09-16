@@ -1,0 +1,17 @@
+/* Normal */
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather-Regular'), url('Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather-Italic'), url('Merriweather-Italic.ttf') format('truetype');
+}
