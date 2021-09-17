@@ -44,6 +44,12 @@ export default {
   computed: {
     ...mapGetters('recipe', ['recipes', 'recipeByPath'])
   },
+  beforeMount () {
+    if (!this.recipe) {
+      // If we don't have a recipe, redirect back to home page
+      this.$router.replace('/')
+    }
+  },
   methods: {
     ...mapActions(
       'recipe', {

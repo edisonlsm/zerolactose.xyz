@@ -10,11 +10,11 @@ export default {
     htmlAttrs: {
       lang: 'pt-BR'
     },
-    title: 'Sabor: Zero Lactose',
+    title: 'Receitas Zero Lactose',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Receitas Zero Lactose' },
       { name: 'theme-color', content: '#db813b' }
     ],
     link: [
@@ -53,6 +53,7 @@ export default {
   },
 
   generate: {
+    fallback: true,
     async routes () {
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
