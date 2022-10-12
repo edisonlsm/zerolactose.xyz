@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 // Load all items just so we can pick one at page mount
-const { data } = await useAsyncData('data', async () => await queryContent('/').only(['_path', 'title']).find())
+const { data } = await useAsyncData('data', async () => await queryContent('/')
+  .where({ _path: { $not: '/cremes-e-coberturas/_dir' } })
+  .only(['_path', 'title'])
+  .find())
 
 onMounted(() => {
   // Pick one item at random
