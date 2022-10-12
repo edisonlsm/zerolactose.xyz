@@ -14,27 +14,14 @@
       class="transform left-0 w-60 bg-white fixed lg:hidden h-full overflow-auto ease-in-out transition-all duration-300 z-30 border-zero-orange border-opacity-50 border-r"
       :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
     >
-      <RecipesIndex @opened="isOpen = false" />
+      <ContentIndex @opened="isOpen = false" />
     </aside>
   </header>
 </template>
 
-<script>
-import MenuIcon from '~/assets/svg/menu.svg?inline'
+<script setup>
+import MenuIcon from '~/assets/menu.svg?component'
 
-export default {
-  components: {
-    MenuIcon
-  },
-  data () {
-    return {
-      isOpen: false
-    }
-  },
-  watch: {
-    $route () {
-      this.isOpen = false
-    }
-  }
-}
+const isOpen = ref(false)
+
 </script>
