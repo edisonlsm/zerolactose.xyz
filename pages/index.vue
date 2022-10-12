@@ -14,5 +14,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div />
+  <ContentIndex />
 </template>
