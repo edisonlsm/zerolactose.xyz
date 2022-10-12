@@ -9,8 +9,6 @@ onMounted(() => {
   router.replace(item._path)
 })
 
-// const recipe = this.recipes[Math.floor(Math.random() * this.recipes.length)]
-//     this.$router.replace(`${recipe.path}/`)
 </script>
 
 <template>
