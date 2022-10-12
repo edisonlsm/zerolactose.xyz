@@ -6,11 +6,11 @@ const { data: navigation } = await useAsyncData('nav', () => fetchContentNavigat
   <nav class="my-4">
     <ul>
       <li v-for="category in navigation" :key="category._path">
-        <NuxtLink :to="category._path">
+        <!-- <NuxtLink :to="category._path"> -->
           <span class="block mx-6 font-bold text-zero-orange text-2xl">
             {{ category.title }}
           </span>
-        </NuxtLink>
+        <!-- </NuxtLink> -->
 
         <ul class="flex flex-wrap my-2 mx-6">
           <li

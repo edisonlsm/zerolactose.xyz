@@ -16,6 +16,11 @@ module.exports = {
             },
             'ul > li': {
               position: 'relative',
+            },
+            a: {
+              fontSize: '0.75em',
+              fontWeight: '400',
+              textDecoration: 'none',
             }
           }
         }
