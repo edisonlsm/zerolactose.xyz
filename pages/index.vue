@@ -1,9 +1,8 @@
 <template>
-  <NuxtLink v-for="content in data" :to="content._path" :key="content._path">
-    {{ content.title }}<br />
-  </NuxtLink>
+  <span class="text-red-500 text-2xl">Index</span>
+  <TableOfContents />
+  <span class="text-red-500 text-2xl">End Index</span>
 </template>
 
-<script setup>
-const { data } = await useAsyncData('home', () => queryContent().find())
+<script setup lang="ts">
 </script>
