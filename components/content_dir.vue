@@ -1,8 +1,8 @@
 <template>
   <div class="pl-4">
     <div v-for="content in contents" :key="content._path">
-      <span v-if="isCurrentContent(content)" class="font-bold underline text-lg text-orange-400">{{ content.title }}</span>
-      <NuxtLink v-else class="hover:underline font-bold text-lg" :to="content._path">
+      <!-- <span v-if="isCurrentContent(content)" class="font-bold underline text-lg text-orange-400">{{ content.title }}</span> -->
+      <NuxtLink class="hover:underline font-bold text-lg" exact-active-class="text-2xl text-orange-400" :to="content._path">
         {{ content.title }}<br />
       </NuxtLink>
     </div>
@@ -25,8 +25,4 @@ const props = defineProps<{
 
 const directories = computed(() => props.dir.children.flatMap((c) => "path" in c ? <ContentDir> c : []))
 const contents = computed(() => props.dir.children.flatMap((c) => "_path" in c ? <ParsedContent> c : []))
-
-function isCurrentContent(content: ParsedContent) {
-  return content._path === route.path;
-}
 </script>
