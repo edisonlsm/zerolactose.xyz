@@ -7,5 +7,9 @@ export default defineNuxtConfig({
   //   preset: "cloudflare-pages"
   // },
 
-  modules: ["nitro-cloudflare-dev", "@nuxt/content"]
+  modules: ["nitro-cloudflare-dev", "@nuxt/content"],
+
+  content: {
+    locales: ['pt-BR']
+  }
 })
