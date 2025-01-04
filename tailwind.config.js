@@ -2,7 +2,29 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'h1, h2, h3, h4': {
+              color: '#d47d39',
+              fontWeight: '700',
+              // fontFamily: 'Raleway'
+            },
+            p: {
+              // fontFamily: 'Merriweather'
+            },
+            'ul > li': {
+              position: 'relative',
+              // fontFamily: 'Merriweather'
+            }
+          }
+        }
+      },
+      colors: {
+        'zero-orange': '#d47d39'//
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography')

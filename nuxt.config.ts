@@ -14,6 +14,10 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    locales: ['pt-BR']
+    locales: ['pt-BR'],
+    markdown: {
+      anchorLinks: false,
+    }
   }
+
 })

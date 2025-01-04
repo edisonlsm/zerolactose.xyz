@@ -7,8 +7,10 @@
     </div>
     <div class="m-8">
       <ContentRenderer v-if="data" :value="data">
-        <!-- <h6 class="prose prose-sm md:prose lg:prose-lg xl:prose-xl">{{ data!.title }}</h6> -->
-        <ContentRendererMarkdown :value="data" class="prose prose-sm md:prose lg:prose-lg xl:prose-xl" />
+        <article class="prose prose-sm md:prose lg:prose-lg xl:prose-xl">
+          <h1>{{ data!.title }}</h1>
+          <ContentRendererMarkdown :value="data"  />
+        </article>
       </ContentRenderer>
       <span v-else>{{ error?.statusMessage }}</span>
     </div>
