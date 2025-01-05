@@ -1,8 +1,16 @@
 <template>
-  <span class="text-red-500 text-2xl">Index</span>
-  <TableOfContents />
-  <span class="text-red-500 text-2xl">End Index</span>
+  <div />
 </template>
 
 <script setup lang="ts">
+onMounted(async () => {
+  const contentList = await queryContent().find()
+  // Choose one content at random and redirect to it
+  const content = contentList[Math.floor(Math.random() * contentList.length)]
+
+  if (content._path) {
+    const router = useRouter()
+    router.replace(content._path)
+  }
+})
 </script>
