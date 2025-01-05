@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'Receitas Zero Lactose',
       meta: [
         { name: 'theme-color', content: '#da966b' }
       ]

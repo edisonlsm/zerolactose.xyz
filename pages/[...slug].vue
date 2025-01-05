@@ -15,6 +15,13 @@
 const route = useRoute();
 
 const { data, error } = useAsyncData('doc', () => queryContent(route.path).findOne())
+
+useSeoMeta({
+  title: () => `Receitas Zero Lactose`,
+  ogTitle: () => `Receitas Zero Lactose`,
+  description: () => data.value?.title,
+  ogDescription: () => data.value?.title,
+})
 </script>
 
 <style lang="postcss">
