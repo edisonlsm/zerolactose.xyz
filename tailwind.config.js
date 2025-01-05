@@ -22,7 +22,8 @@ export default {
         }
       },
       colors: {
-        'zero-orange': '#d47d39'//
+        'zero-orange': '#d47d39',
+        'zero-orange-light': '#da966b'
       }
     },
   },
