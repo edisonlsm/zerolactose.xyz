@@ -1,19 +1,12 @@
 <template>
-  <div class="lg:flex h-full mb-16 lg:mb-0">
-    <!-- FIXED DESKTOP MENU -->
-    <!-- SHOWS FROM LG AND ABOVE -->
-    <div class="flex-shrink-0 lg:static lg:w-60 xl:w-auto hidden lg:block border-zero-orange border-opacity-50 border-l-0 border-t-0 border-r border-b-0">
-      <TableOfContents />
-    </div>
-    <div class="m-8">
-      <ContentRenderer v-if="data" :value="data">
-        <article class="prose prose-sm md:prose lg:prose-lg xl:prose-xl">
-          <h1>{{ data!.title }}</h1>
-          <ContentRendererMarkdown :value="data"  />
-        </article>
-      </ContentRenderer>
-      <span v-else>{{ error?.statusMessage }}</span>
-    </div>
+  <div class="m-8">
+    <ContentRenderer v-if="data" :value="data">
+      <article class="prose prose-sm md:prose lg:prose-lg xl:prose-xl">
+        <h1>{{ data!.title }}</h1>
+        <ContentRendererMarkdown :value="data"  />
+      </article>
+    </ContentRenderer>
+    <span v-else>{{ error?.statusMessage }}</span>
   </div>
  
 </template>
