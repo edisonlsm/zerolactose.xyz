@@ -9,7 +9,7 @@
       </a>
     </div>
     <div v-for="directory in directories" :key="directory.path">
-      <span class="block my-2 text-gray-500 capitalize text-2xl">{{ directory.path }}</span>
+      <span class="block my-2 text-gray-500 capitalize text-xl">{{ directory.path }}</span>
       <ContentDir :dir="directory" />
     </div>
   </div>

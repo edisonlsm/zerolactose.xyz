@@ -1,5 +1,7 @@
 <template>
-  <ContentDir :dir="data!.dir" />
+  <div class="pl-4">
+    <ContentDir :dir="data!.dir" />
+  </div>
 </template>
 
 <script setup lang="ts">
