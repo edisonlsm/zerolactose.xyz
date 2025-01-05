@@ -16,3 +16,9 @@ const route = useRoute();
 
 const { data, error } = useAsyncData('doc', () => queryContent(route.path).findOne())
 </script>
+
+<style lang="postcss">
+.footnote {
+  @apply text-sm text-gray-600
+}
+</style>

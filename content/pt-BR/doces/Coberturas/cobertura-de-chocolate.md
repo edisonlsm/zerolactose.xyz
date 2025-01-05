@@ -19,8 +19,5 @@ Leve ao fogo e mexa até misturar tudo. Espere ferver e misture mais um pouco, a
 Vire sobre o bolo e espalhe bem. Ela vai secar bem rápido, então tome cuidado na hora de virar para espalhar assim que possível.
 
 <br />
-<br />
-<br />
-<br />
 
-[`Adaptado de https://comidinhasdochef.com/calda-de-chocolate-cremosa/`](https://comidinhasdochef.com/calda-de-chocolate-cremosa/)
+[Adaptado de https://comidinhasdochef.com/calda-de-chocolate-cremosa/](https://comidinhasdochef.com/calda-de-chocolate-cremosa/){.footnote}

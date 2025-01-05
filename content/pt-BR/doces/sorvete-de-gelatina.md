@@ -36,8 +36,5 @@ Retire do freezer e bata por cerca de 10 minutos, a massa deverá crescer um pou
 Rende aproxidamente 4 litros de sorvete.
 
 <br />
-<br />
-<br />
-<br />
 
-[`Adaptado de https://comidinhasdochef.com/sorvete-caseiro-cremoso/`](https://comidinhasdochef.com/sorvete-caseiro-cremoso/)
+[Adaptado de https://comidinhasdochef.com/sorvete-caseiro-cremoso/](https://comidinhasdochef.com/sorvete-caseiro-cremoso/){.footnote}

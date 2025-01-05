@@ -26,8 +26,5 @@ Deixe a massa descansar por cinco minutinhos no freezer para tomar forma. A mass
 Faça pequenas bolinhas com as mãos (2~3cm) e distribua-os igualmente em uma forma untada. Asse em forno médio (200 graus) por cerca de 30min.
 
 <br />
-<br />
-<br />
-<br />
 
-[`Adaptado de https://www.youtube.com/watch?v=cScbtSVMgac`](https://www.youtube.com/watch?v=cScbtSVMgac)
+[Adaptado de https://www.youtube.com/watch?v=cScbtSVMgac](https://www.youtube.com/watch?v=cScbtSVMgac){.footnote}
