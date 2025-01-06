@@ -9,14 +9,14 @@ export default {
             'h1, h2, h3, h4': {
               color: '#d47d39',
               fontWeight: '700',
-              // fontFamily: 'Raleway'
+              fontFamily: 'Noto Sans'
             },
             p: {
-              // fontFamily: 'Merriweather'
+              fontFamily: 'Noto Sans'
             },
             'ul > li': {
               position: 'relative',
-              // fontFamily: 'Merriweather'
+              fontFamily: 'Noto Sans'
             }
           }
         }

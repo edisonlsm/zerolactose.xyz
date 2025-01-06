@@ -27,13 +27,20 @@ export default defineNuxtConfig({
   modules: [
     "nitro-cloudflare-dev",
     "@nuxt/content",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    '@nuxtjs/google-fonts'
   ],
 
   content: {
     locales: ['pt-BR'],
     markdown: {
       anchorLinks: false,
+    }
+  },
+
+  googleFonts: {
+    families: {
+      "Noto Sans": true,
     }
   }
 
