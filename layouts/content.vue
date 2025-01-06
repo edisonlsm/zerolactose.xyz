@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden h-screen flex flex-col">
+  <div class="overflow-hidden h-dvh flex flex-col">
     <Header />
     <div class="flex-grow flex max-h-screen overflow-y-hidden">
       <!-- FIXED DESKTOP MENU -->
