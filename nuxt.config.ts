@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Receitas Zero Lactose',
       meta: [
-        { name: 'theme-color', content: '#da966b' }
+        { name: 'theme-color', content: '#da966b' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' }
       ]
     }
   },

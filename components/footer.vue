@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex-none bg-zero-orange-light bg-opacity-60 text-white font-bold p-2 flex justify-between items-center">
+  <footer class="flex-none bg-zero-orange-light bg-opacity-60 text-white font-bold py-2 px-safe-offset-2 flex justify-between items-center">
     <span class="text-sm">© Edison Santiago</span>
     <div class="flex space-x-3 items-center">
       <a v-for="network in socialNetworks" :href="network.url" :key="network.name"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="block font-bold text-zero-orange px-4 pt-4 pb-0 text-2xl">Todas as Receitas</span>
+    <span class="block font-bold text-zero-orange px-safe-offset-4 pt-4 pb-0 text-2xl">Todas as Receitas</span>
     <div class="pl-4">
       <ContentDir :dir="data!.dir" />
     </div>
