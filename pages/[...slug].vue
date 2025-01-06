@@ -16,6 +16,10 @@ const route = useRoute();
 
 const { data, error } = useAsyncData('doc', () => queryContent(route.path).findOne())
 
+definePageMeta({
+  layout: 'content'
+})
+
 useSeoMeta({
   title: () => data.value!.title!,
   ogTitle: () => data.value!.title!,
