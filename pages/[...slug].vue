@@ -1,5 +1,5 @@
 <template>
-  <div class="m-6 lg:m-8">
+  <div class="m-safe-offset-6 m-6 lg:m-safe-offset-8">
     <ContentRenderer v-if="data" :value="data">
       <article class="prose prose-base lg:prose-lg xl:prose-xl">
         <h1>{{ data!.title }}</h1>
