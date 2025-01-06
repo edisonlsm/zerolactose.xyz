@@ -40,8 +40,10 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      "Raleway": true,
-      "Merriweather": true,
+      Raleway: {
+        wght: [700],
+      },
+      Merriweather: true,
     }
   }
 
