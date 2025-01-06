@@ -17,7 +17,7 @@ const socialNetworks = ref([
     {
       "name": "GitHub",
       "iconName": "github",
-      "url": "https://github.com/edisonlsm/"
+      "url": "https://github.com/edisonlsm/zerolactose.xyz"
     },
     {
       "name": "Bluesky",
